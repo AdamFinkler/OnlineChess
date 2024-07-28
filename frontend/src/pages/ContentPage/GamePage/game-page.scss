@@ -1,0 +1,15 @@
+// .game-page-container {
+//   height: 100%;
+//   width: 100%;
+// }
+
+.game-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  gap: 30px;
+  /* Optionally, to visually debug */
+  background-color: lightgray;
+}

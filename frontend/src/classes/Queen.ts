@@ -1,7 +1,7 @@
 import { Soldier } from "./Soldier";
 
 
-class Queen extends Soldier{
+export class Queen extends Soldier{
     constructor(xPos:number , yPos:number)
     {
         const isBlack = (yPos<=1?false:true)

@@ -1,6 +1,6 @@
 import { Soldier } from "./Soldier";
 
-class Bishop extends Soldier {
+export class Bishop extends Soldier {
   constructor(xPos: number, yPos: number) {
     const isBlack = yPos <= 1 ? false : true;
 

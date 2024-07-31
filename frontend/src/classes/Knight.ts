@@ -1,6 +1,6 @@
 import { Soldier } from "./Soldier";
 
-class Knight extends Soldier {
+export class Knight extends Soldier {
   // Implement the abstract method
 
   constructor(xPos: number, yPos: number) {

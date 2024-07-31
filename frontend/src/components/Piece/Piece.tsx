@@ -1,9 +1,9 @@
 import React from "react";
-import "./soldier.scss";
+import "./piece.scss";
 interface SoldierProps {
   name: String;
 }
-const Soldier = (props: SoldierProps) => {
+const Piece = (props: SoldierProps) => {
   return (
     <div className="soldier-container">
       <p className="soldier-text">{props.name}</p>
@@ -11,4 +11,4 @@ const Soldier = (props: SoldierProps) => {
   );
 };
 
-export default Soldier;
+export default Piece;

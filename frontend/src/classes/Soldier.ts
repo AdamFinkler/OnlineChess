@@ -29,7 +29,8 @@ export abstract class Soldier {
       this._yPos = yPos;
       this._isBlack = isBlack;
     }
-  
+
+    
     abstract movement(): void;
   }
   

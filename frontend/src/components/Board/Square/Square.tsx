@@ -1,12 +1,14 @@
 import React from "react";
 import "./square.scss";
-import Soldier from "../../Soldier/Soldier";
+import Piece from "../../Piece/Piece";
+import { Soldier } from "../../../classes/Soldier";
 
 interface squareProps {
   id: number;
   color: number;
   rowCounter: number;
   image?: string;
+  soldier:Soldier;
 }
 
 export const Square = (props: squareProps) => {
@@ -18,13 +20,9 @@ export const Square = (props: squareProps) => {
   }
 
   return (
-    <div
-      className={`square ${color}`}
-      onClick={() => {
-        console.log("id of this square is: ", props.id);
-      }}
-    >
-      <Soldier name="S" />
+    <div className={`square ${color}`} onClick={() => {console.log("id of this square is: ", props.id);}}>
+
+      <Piece name="S" />
     </div>
   );
 };

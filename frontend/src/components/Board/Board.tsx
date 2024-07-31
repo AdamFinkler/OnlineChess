@@ -43,9 +43,9 @@ export const Board = () => {
             <Square
               key={colIndex}
               id={rowIndex * 8 + colIndex}
-              color={(rowIndex + colIndex) % 2}
               soldier={soldier}
-              rowCounter={rowIndex}
+              rowIndex={rowIndex}
+              colIndex={colIndex}
             />
           ))}
         </div>

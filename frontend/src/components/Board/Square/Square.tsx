@@ -5,23 +5,26 @@ import { Soldier } from "../../../classes/Soldier";
 
 interface squareProps {
   id: number;
-  color: number;
-  rowCounter: number;
+  rowIndex: number;
+  colIndex: number;
   image?: string;
-  soldier:Soldier;
+  soldier: Soldier;
 }
 
-export const Square = (props: squareProps) => {
-  let color: string;
-  if (props.rowCounter % 2 === 0) {
-    color = props.color % 2 === 0 ? "blue" : "light-blue";
+export const Square = ({ id, rowIndex, colIndex, soldier }: squareProps) => {
+  let squareColor;
+  if (rowIndex % 2 == 0) {
+    squareColor = colIndex % 2 == 0 ? "blue" : "light-blue";
   } else {
-    color = props.color % 2 === 1 ? "blue" : "light-blue";
+    squareColor = colIndex % 2 == 0 ? "light-blue" : "blue";
   }
-
   return (
-    <div className={`square ${color}`} onClick={() => {console.log("id of this square is: ", props.id);}}>
-
+    <div
+      className={`square ${squareColor}`}
+      onClick={() => {
+        console.log("id of this square is: ", id);
+      }}
+    >
       <Piece name="S" />
     </div>
   );

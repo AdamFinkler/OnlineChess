@@ -6,10 +6,18 @@
   align-items: center;
 }
 
-.blue {
-  background-color: rgb(32, 32, 227);
+.brown {
+  background-color: brown;
 }
 
-.light-blue {
-  background-color: rgb(139, 218, 247);
+.yellow {
+  background-color: peachpuff;
+}
+
+.brown:hover {
+  filter: brightness(85%);
+}
+
+.yellow:hover {
+  filter: brightness(85%);
 }

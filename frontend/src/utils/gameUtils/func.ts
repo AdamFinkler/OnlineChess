@@ -48,11 +48,6 @@ export function initializeBoard() {
     board[1][i] = new Pawn(i, 1);
     board[6][i] = new Pawn(i, 6);
   }
-  for (let y = 0; y < board.length; y++) {
-    for (let x = 0; x < board[y].length; x++) {
-      console.log(`Piece at position (${x}, ${y}):`, board[y][x]);
-    }
-  }
-  console.log("size of arr is: ", board.length);
+
   return board;
 }

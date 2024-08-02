@@ -8,15 +8,16 @@ interface squareProps {
   rowIndex: number;
   colIndex: number;
   image?: string;
-  soldier: Soldier;
+  soldier?: Soldier;
 }
 
 export const Square = ({ id, rowIndex, colIndex, soldier }: squareProps) => {
+  console.log("solider is: ", soldier);
   let squareColor;
   if (rowIndex % 2 == 0) {
-    squareColor = colIndex % 2 == 0 ? "blue" : "light-blue";
+    squareColor = colIndex % 2 == 0 ? "brown" : "yellow";
   } else {
-    squareColor = colIndex % 2 == 0 ? "light-blue" : "blue";
+    squareColor = colIndex % 2 == 0 ? "yellow" : "brown";
   }
   return (
     <div
@@ -25,7 +26,7 @@ export const Square = ({ id, rowIndex, colIndex, soldier }: squareProps) => {
         console.log("id of this square is: ", id);
       }}
     >
-      <Piece name="S" />
+      {soldier ? <Piece soldier={soldier} /> : null}
     </div>
   );
 };

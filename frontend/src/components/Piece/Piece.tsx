@@ -1,12 +1,14 @@
 import React from "react";
 import "./piece.scss";
+import { Soldier } from "../../classes/Soldier";
+
 interface SoldierProps {
-  name: String;
+  soldier: Soldier;
 }
 const Piece = (props: SoldierProps) => {
   return (
-    <div className="soldier-container">
-      <p className="soldier-text">{props.name}</p>
+    <div className="soldier-container" >
+      <img src={props.soldier._imageUrl}/>
     </div>
   );
 };

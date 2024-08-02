@@ -34,7 +34,9 @@ export const Board = () => {
     const BoardArr: Soldier[][] = initializeBoard();
     setBoard(BoardArr);
   }, []);
-
+    const movementHandler = ()=>{
+      
+    }
   return (
     <div className="board-container">
       {board.map((row, rowIndex) => (

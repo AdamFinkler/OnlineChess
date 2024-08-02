@@ -1,5 +1,7 @@
 .soldier-container {
   cursor: pointer;
+  transform: rotate(180deg);
+
   .soldier-text {
     font-size: medium;
     font-weight: bold; // Adjusted from 2000 to bold since font-weight doesn't accept 2000

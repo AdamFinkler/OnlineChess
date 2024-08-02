@@ -3,7 +3,7 @@
   flex-direction: column;
   height: 670px;
   width: 670px;
-
+  transform: rotate(180deg);
   .row-container {
     display: flex;
     flex: 1; /* Ensure each row takes up an equal portion of the board's height */
